@@ -1,0 +1,40 @@
+Cangmiao Tiny network model notice
+
+Bundled network:
+  b10c384h6nbttflrs.bin.gz
+  KataGo transformer network, 10 blocks, 384 trunk channels
+  Compressed size: 38,245,488 bytes
+  SHA-256: 0ba27eced5180b3e3d0b898b280c541112989765e789d1eb6cd0d31b2b2c1229
+
+Source:
+  https://github.com/lightvector/KataGo/releases/tag/v1.17.0
+  https://github.com/lightvector/KataGo/releases/download/v1.17.0/b10c384h6nbttflrs.bin.gz
+  KataGo neural-network license: https://katagotraining.org/network_license/
+
+KataGo Neural Network License
+Copyright 2026 David J Wu ("lightvector").
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the neural net files or training weight files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to
+do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+The KataGo executable is separately licensed; see its upstream
+LICENSE_AND_AUTHORS and the corresponding licenses bundled with the engine
+distribution.
+
+"b10" means ten network blocks, not ten billion parameters. This model was
+trained and published by the KataGo project; Cangmiao does not train or modify
+the network weights.

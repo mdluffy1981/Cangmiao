@@ -1,0 +1,58 @@
+Cangmiao CUDA engine and model notice
+
+Bundled KataGo engine:
+  Version: v1.18.2
+  Windows x64 build: CUDA 12.5, cuDNN 9.8.0
+  Source: https://github.com/lightvector/KataGo/releases/tag/v1.18.2
+  Asset: https://github.com/lightvector/KataGo/releases/download/v1.18.2/katago-v1.18.2-cuda12.5-cudnn9.8.0-windows-x64.zip
+  Asset SHA-256: 2d88fc26f7a64ae02278240eca87d7c56f149a88674f76b716faf5fc4690f5ac
+
+Requirements:
+  NVIDIA GPU and a compatible NVIDIA driver.
+  The driver must support CUDA 12.5. No separate CUDA Toolkit or cuDNN
+  installation is required: the runtime libraries below are bundled next to
+  engine\cuda\katago.exe. If no NVIDIA GPU is available, use the standard CPU
+  or OpenCL build.
+
+Bundled NVIDIA runtime libraries (CUDA 12.5 / cuDNN 9.8.0, from NVIDIA redist):
+  cuBLAS 12.5.3.2: cublas64_12.dll, cublasLt64_12.dll
+    libcublas-windows-x86_64-12.5.3.2-archive.zip
+    SHA-256: d3628039eb3d39ba9fe6a5350447b10483dd13d5973b5e4cde1d3e917d457d01
+  NVRTC 12.5.82: nvrtc64_120_0.dll, nvrtc64_120_0.alt.dll, nvrtc-builtins64_125.dll
+    cuda_nvrtc-windows-x86_64-12.5.82-archive.zip
+    SHA-256: 0bc5443fe432d69495412e1ee275fcc5f7590a65bda360ee5e25c20eb192632e
+  cuDNN 9.8.0.87 (cuda12): cudnn*64_9.dll
+    cudnn-windows-x86_64-9.8.0.87_cuda12-archive.zip
+    SHA-256: d8a23705e3884b137b7e05449fb2b61bfa524e7cfc3fda80743d633f423c6ce4
+  Source: https://developer.download.nvidia.com/compute/cuda/redist/ and
+          https://developer.download.nvidia.com/compute/cudnn/redist/
+  These libraries are distributed under NVIDIA's license terms; the license
+  files are included in engine\cuda\NVIDIA-LICENSES.
+
+Bundled neural network:
+  kata1-b18c384nbt-s9996604416-d4316597426.bin.gz
+  Source: https://katagotraining.org/networks/
+  SHA-256: 9d7a6afed8ff5b74894727e156f04f0cd36060a24824892008fbb6e0cba51f1d
+
+KataGo Neural Network License
+Copyright 2026 David J Wu ("lightvector").
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the neural net files or training weight files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to
+do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+The KataGo executable is separately licensed. See its upstream
+LICENSE_AND_AUTHORS: https://github.com/lightvector/KataGo/blob/master/LICENSE_AND_AUTHORS

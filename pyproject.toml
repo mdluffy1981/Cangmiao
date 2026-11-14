@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Cangmiao"
+version = "0.2.3"
+description = "Cangmiao 桌面人机对弈平台 (PySide6 + KataGo GTP)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PySide6>=6.6"]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "pytest-qt>=4.4"]
+
+[project.gui-scripts]
+cangmiao = "katago_gui.app:main"
+katago-desktop = "katago_gui.app:main"
+
+[project.scripts]
+cangmiao-setup = "katago_gui.setup_engine:main"
+katago-desktop-setup = "katago_gui.setup_engine:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+qt_api = "pyside6"
+markers = ["real_engine: requires a configured real KataGo engine"]
